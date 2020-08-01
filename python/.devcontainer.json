@@ -1,0 +1,51 @@
+{
+    "name": "Dev Container Python Env",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "python-container",
+    "workspaceFolder": "/workspace/python",
+    "settings": {
+        "python.autoComplete.extraPaths": [
+            "solid"
+        ],
+        "files.eol": "\n",
+        "editor.tabSize": 4,
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.testing.pytestEnabled": true,
+        "python.testing.pytestPath": "/usr/local/bin/pytest",
+        "python.linting.lintOnSave": true,
+        "python.linting.mypyEnabled": true,
+        "python.linting.pylintPath": "/usr/local/bin/pylint",
+        "python.linting.pylintEnabled": false,
+        "python.linting.flake8Enabled": true,
+        "python.linting.flake8Args": [
+            "max-line-length=100",
+            "ignore=E203,W503,W504"
+        ],
+        "python.formatting.provider": "black",
+        "python.formatting.autopep8Args": [
+            "--max-line-length=100"
+        ],
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": false,
+        "editor.suggestSelection": "first",
+        "files.trimTrailingWhitespace": true,
+        "python.jediEnabled": false,
+        "terminal.integrated.inheritEnv": false,
+    },
+    "extensions": [
+        "ms-python.python",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "codezombiech.gitignore",
+        "mhutchie.git-graph",
+        "esbenp.prettier-vscode",
+        "coenraads.bracket-pair-colorizer",
+        "ionutvmi.path-autocomplete",
+        "littlefoxteam.vscode-python-test-adapter",
+    ],
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ],
+    "shutdownAction": "stopCompose"
+}
