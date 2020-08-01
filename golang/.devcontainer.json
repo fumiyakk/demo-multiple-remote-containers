@@ -1,0 +1,20 @@
+{
+    "name": "Dev Container Golang Env",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "golang-container",
+    "workspaceFolder": "/workspace/golang",
+    "extensions": [
+      "golang.go",
+      "donjayamanne.githistory",
+      "eamodio.gitlens",
+      "codezombiech.gitignore",
+      "mhutchie.git-graph",
+      "esbenp.prettier-vscode",
+      "coenraads.bracket-pair-colorizer",
+      "ionutvmi.path-autocomplete"
+    ],
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ],
+    "shutdownAction": "stopCompose"
+}
